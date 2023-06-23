@@ -1,0 +1,325 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #E3F4F4;
+    color: #394867;
+    font-size:15px;
+    margin:0px;
+}
+div{
+    padding:10px;
+    margin:10px;
+    
+}
+h1,.navbar,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    color: #394867;
+}
+li{
+    display:inline;
+
+}
+.hero{
+    font-size: 35px;
+    position: relative;
+}
+
+.navbar{
+    gap: 30px;
+    font-size: 1.25rem;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    letter-spacing: 2px;
+    background-color: #5b52424f;
+    margin:0;
+}
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding:10px;
+    border-radius: 10%;
+    transition: background-color 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+a:hover {
+    
+    color: #C4DFDF;
+}
+a:hover h2{
+    color: #f1f6f9;
+}
+
+.herobody{
+    display:grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    justify-content: center;
+    align-items:center;
+    min-width:50%;
+    position:relative;
+}
+
+#webdev{
+    color:#001C30;
+    font-size:3em;
+}
+
+
+
+#photocontainer{
+    display:flex;
+    justify-content: flex-end;
+    position:relative;
+}
+
+#webdev{
+    margin-top: 0px;
+}
+
+.center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.herocontent{
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    position:relative;
+}
+
+.skills{
+    background-color: #394867;
+    margin:0px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.grid{
+    display:grid;
+    grid-template-columns: min-content min-content min-content;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    min-width: 50%;
+}
+
+.grid img{
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+    object-fit: contain;
+}
+
+.skills h1, .skills h2, .skills h3, .skills h4,.skills h5{
+    color:#DAFFFB;
+}
+.skills p{
+    color:#F6F1F1
+}
+
+.circle{
+    position:absolute;
+    height:300px;
+    width:300px;
+    background-image:linear-gradient(to right, #9db2bf, #DAFFFB);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.one{
+    top: 0%;
+    right: 0%;
+}
+
+.two{
+    
+    bottom:-40%;
+}
+.portfoliobody{
+    position:relative;
+    margin:0;
+}
+.three{
+    top: -30%;
+    left:-10%;
+    position:absolute;
+}
+#name{
+    font-weight: bold;
+    color: #212A3E;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+    
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F1F1;
+}
+.projects * , .projects{
+    
+    margin:0;
+    color: #176B87;
+}
+h1{
+    font-size:3rem;
+}
+
+.contact{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    margin:0;
+    background-color: #3F979B;
+}
+
+.contact *{ 
+    color: #DAFFFB;
+}
+
+.grid a:hover, a:hover p{
+    background-color: #27374D;
+    color:white;
+}
+
+@media (width < 1115px) {
+    body {
+        font-size: 15px;
+    }
+
+    .hero {
+        font-size: 1.1rem;
+    }
+    #name{
+        font-size:1.4rem;
+    }
+    h1{
+        font-size:2rem;
+    }
+    h2{
+        font-size:1.5rem;
+    }
+    .herobody{
+        display:flex;
+        flex-flow:column;
+    }
+    .herobody > #photocontainer{
+        order:-1;
+    }
+    .grid{
+        display:flex;
+        flex-flow: column;
+    }
+    .grid > div , .grid > a > div{
+    display:flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content:center;}
+    .circle{
+        height:200px;
+        width:200px;
+    }
+        #photocontainer>img {
+            height: 300px;
+            width: 300px;
+        }
+}
+
+@media(width < 591px)
+{
+    .grid img{
+        height:100px;
+        width:100px;
+    }
+    #photocontainer > img{
+        height:200px;
+        width:200px;
+    }
+    .html{
+        font-size:10px;
+    }
+    .circle{
+        height:150px;
+        width:150px;
+    }
+    .navbar{
+        font-size: 0.5rem;
+        height:0.2rem;
+    }
+        .hero {
+            font-size: 0.8rem;
+        }
+    
+        #name {
+            font-size: 1rem;
+        }
+    
+        h1 {
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size:1.1rem;
+        }
+        p{
+            font-size: 10px;
+        }
+}
+@media (width < 320px)
+{
+    .grid img {
+            height: 50px;
+            width: 50px;
+        }
+    
+        #photocontainer>img {
+            height: 100px;
+            width: 100px;
+        }
+    
+        .html {
+            font-size: 5px;
+        }
+    
+        .circle {
+            height: 75px;
+            width: 75px;
+        }
+    
+        .navbar {
+            font-size: 0.3rem;
+            height: 0.001rem;
+            width:100%;
+            letter-spacing:1px;
+
+        }
+    
+        .hero {
+            font-size: 0.3rem;
+        }
+    
+        #name {
+            font-size: 0.5rem;
+        }
+    
+        h1 {
+            font-size: 0.75rem;
+        }
+    
+        h2 {
+            font-size: 0.55rem;
+        }
+    
+        p {
+            font-size: 5px;
+        }
+}
